@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>High&LowGAME上級</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <meta name="robots" content="noindex, nofollow">
+</head>
+
+<body>
+  <header class="pageheader">
+    <h1>High & Low GAME!! ～上級～</h1>
+  </header>
+
+  <div class="field">
+    <article>
+      <div id="card">
+        <img src="trump/s_0.png" id="cib">
+        <img src="trump/s_0.png" id="cia">
+      </div>
+
+      <div id="button">
+        <input type="button" value="High" class="hbutton" onclick="High_Low(1);">
+        or
+        <input type="button" value="Low" class="lbutton" onclick="High_Low(0);">
+      </div>
+
+      <section id="last">
+        <input type="button" onclick="location.href='hindex.html'" value="もう一度プレイする" id="win" class="win" ;>
+        <input type="button" onclick="location.href='hindex.html'" value="もう一度プレイする" id="lose" class="lose" ;>
+        <input type="button" onclick="location.href='hindex.html'" value="もう一度プレイする" id="draw" class="draw" ;>
+        <input type="button" onclick="location.href='highlow.html'" value="トップページに戻る" id="top" class="top" ;>
+      </section>
+
+    </article>
+
+    <aside>
+      <div class="asidem">
+        <p id="Before"></p>
+        <p id="After">
+          次のカードは場にあるカードより高いか低いか考えてみよう！
+        </p>
+        <p id="rireki"></p>
+        <p id="syuryo"></p>
+        <div class="ftext">
+          <div id="kekka"></div>
+          <div id="scount"></div>
+        </div>
+        <p id="rensyou"></p>
+      </div>
+      <div class="asides">
+        <a href="highlow.html" class="utop">TOPに戻る</a>
+        <a href="eindex.html" class="ure">リスタート</a>
+      </div>
+    </aside>
+  </div>
+
+  <script src="hscript.js"></script>
+
+</body>
+
+<footer>
+
+</footer>
+
+</html>

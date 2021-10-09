@@ -1,0 +1,313 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+}
+
+/* header */
+.pageheader{
+  background-color: #222;
+  color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  border-bottom-style: ridge;
+  border-width:20px;
+	border-color: #222;
+}
+
+.pageheader h1 {
+  margin-top: 20px;
+  padding: -3%;
+  font-size: 2.5rem;
+}
+
+/* TOPPAGE */
+#topbody h2 {
+  text-align: center;
+  background-color: crimson;
+  border-bottom-style: solid;
+  border-color: rgb(0, 0, 0);
+  border-width: 10px;
+}
+
+#nanido {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nimage {
+  text-align: center;
+  background-color: #222;
+  border-bottom: solid 8px rgb(0, 0, 0);
+}
+
+.nanido img {
+  max-width: 100%;
+  width: 70%;
+}
+
+.nanido {
+  width: 33%;
+  border-right: solid 8px rgb(0, 0, 0);
+  background-color: azure;
+}
+
+.nanido p {
+  color: #222;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.nanido:last-child {
+  border-right: none;
+}
+
+.nanido h2 {
+  background-color: rgb(247, 227, 114);
+}
+
+.nanido h3 {
+  font-size: 1rem;
+  text-align: center;
+  color: #222;
+}
+
+.vs {
+  margin-bottom: 3px;
+}
+
+.idou {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 2px 5px;
+  text-decoration: none;
+  color: azure;
+  background: #222;
+  border: solid 4px #222;
+  border-radius: 8px;
+}
+
+.idou:hover {
+  background: #222;
+  color: #4f80eb;
+}
+
+/* フィールド */
+.field {
+  display: flex;
+  height: 77vh;
+}
+
+/* 画面の表示 */
+.field article {
+  width: 63%;
+  background-image: url(img/table.jpg);
+  background-size: cover;
+  background-color: rgb(43, 167, 49);
+  background-blend-mode: hard-light;
+}
+
+.field aside {
+  display: flex;
+  position: relative;
+  width: 37%;
+  font-size: 0.95rem;
+  background-color: rgb(221, 148, 53);
+  border: 10px ridge #8a4218;
+  padding-left: 1%;
+  padding-top: 1%;
+}
+
+.asidem {
+  position: relative;
+}
+
+.asides {
+  position: absolute;
+  justify-content: space-around;
+  bottom: 0;
+}
+
+.utop{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 2px 5px;
+  text-decoration: none;
+  color: azure;
+  background: #222;
+  border: solid 4px #222;
+  border-radius: 8px;
+}
+
+.ure {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 2px 5px;
+  text-decoration: none;
+  color: azure;
+  background: #222;
+  border: solid 4px #222;
+  border-radius: 8px;
+}
+
+.ftext {
+  display: flex;
+}
+
+/* トランプ画像 */
+
+#card {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+
+#cib {
+  max-height: 100%;
+  height: 250px;
+  margin-left: 5%;
+}
+#cia {
+  max-height: 100%;
+  height: 250px;
+  margin-right: 5%;
+}
+
+/* High&Lowボタン */
+#button {
+  margin-top: 6%;
+  margin-bottom: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 2px silver;
+}
+
+.hbutton{
+  width: 10%;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgb(141, 141, 141);
+  border-radius:10px;
+  min-width: 200px;
+  max-width: 300px;
+  margin: 2%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 3px solid #222;
+  background: #b62828;
+  cursor: pointer;
+}
+
+.lbutton{
+  width: 10%;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgb(141, 141, 141);
+  border-radius:10px;
+  min-width: 200px;
+  max-width: 300px;
+  margin: 2%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 3px solid #222;
+  background: #5770ac;
+  cursor: pointer;
+}
+
+#last {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 最後まで進んだ時の結果ボタンの表示 */
+
+.win {
+  display: none;
+}
+
+#win {
+  position: absolute;
+  cursor: pointer;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgb(141, 141, 141);
+  border-radius:10px;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 3px solid #222;
+  background: #b62828;
+}
+
+.lose {
+  display: none;
+}
+
+#lose {
+  position: absolute;
+  cursor: pointer;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgb(141, 141, 141);
+  border-radius:10px;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 3px solid #222;
+  background: #b62828;
+}
+
+.draw {
+  display: none;
+}
+
+#draw {
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgb(141, 141, 141);
+  border-radius:10px;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 3px solid #222;
+  background: #b62828;
+}
+
+.top {
+  display: none;
+}
+
+#top {
+  position: absolute;
+  top: 40px;
+  cursor: pointer;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgb(141, 141, 141);
+  border-radius:10px;
+  min-width: 200px;
+  max-width: 300px;
+  margin: 2%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 3px solid #222;
+  background: #5770ac;
+}
+
+/* フッター */
+footer {
+  height: 10vh;
+  text-align: center;
+  color: azure;
+  background-color: #222;
+}
